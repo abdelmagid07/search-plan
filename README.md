@@ -88,7 +88,6 @@ graph LR
 | **Scale** | Good up to ~500K vectors per table | Excellent (billions) | Excellent | Excellent |
 | **Search Speed** | ~5-50ms for <100K vectors | ~1-5ms | ~10-50ms | ~5-20ms |
 | **Setup Difficulty** | **Easy** — enable extension, add column, create index | Medium — manage index files, persistence | Easy — but external service | Medium |
-| **Resume Impact** | "Architected vector database using pgvector on PostgreSQL" | "Optimized FAISS IVF256 indices" | "Integrated Pinecone managed vector DB" | "Deployed Qdrant vector search cluster" |
 
 ---
 
@@ -120,8 +119,6 @@ graph LR
 ### When Would FAISS Be Better?
 FAISS would only be the better choice if we were dealing with **tens of millions of vectors** or needed **sub-millisecond search**. For our current and near-future scale, pgvector is simpler, cheaper, and more maintainable.
 
-> [!NOTE]
-> **For your resume**, pgvector is just as impressive as FAISS. You can write: *"Architected production vector database infrastructure using pgvector on PostgreSQL, handling 50K+ daily similarity searches with <50ms p95 latency."* The same engineering credibility, with cleaner architecture.
 
 ---
 
