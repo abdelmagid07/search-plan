@@ -279,3 +279,11 @@ Existing memories in IndexedDB have either:
 - ❌ FAISS, pgvector, Pinecone: unnecessary at current memory scale
 - ❌ Streaming embeddings or batch server-side indexing
 - ❌ GPU acceleration — CPU is sufficient for single-request inference with fastembed
+
+## Notes for team
+- I have created feature branches on frontend and backend. They are both called semantic-new.
+- I finished a V1 of this architecture in the branch and tested it locally. Search works without freezing, there is a small buffer delay Ill look into.
+- Completely removed old vectorclassifier.js
+- Sachin or Nikki if you want to add anything feel free to push changes on those branches
+  
+
